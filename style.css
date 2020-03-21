@@ -29,3 +29,11 @@ body {
   border-radius: 5px;
   transition: all 0.5s ease;
   }
+
+  .field-name i,
+  .field-email i,
+  .field-password i,
+  .field-finish i {
+  padding: 10px;
+  cursor: pointer;
+  }
