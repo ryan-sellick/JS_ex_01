@@ -9,7 +9,7 @@ function animatedForm(){
 
         //Check for validation
         if (INPUT.type === "text" && validateUser(INPUT)){
-          console.log('everything is okay!');
+          nextSlide(PARENT, NEXTFORM);
         }
     });
   });
@@ -23,6 +23,12 @@ function validateUser(user){
     error('rgb(87, 189, 130)');
     return true;
   }
+}
+
+function nextSlide(PARENT, NEXTFORM){
+  PARENT.classList.add('innactive');
+  PARENT.classList.remove('active');
+  NEXTFORM.classList.add('active');
 }
 
 function error (color){
