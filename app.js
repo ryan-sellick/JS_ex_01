@@ -6,6 +6,11 @@ function animatedForm(){
         const INPUT = arrow.previousElementSibling;
         const PARENT = arrow.parentElement;
         const NEXTFORM = PARENT.nextElementSibling;
+
+        //Check for validation
+        if (INPUT.type === "text" && validateUser(INPUT)){
+          console.log('everything is okay!');
+        }
     });
   });
 }
